@@ -22,7 +22,7 @@ let users = [
     { id: 3, log: 'CCC', pass: 'PASS3', age: 18, student: 'checked', gender: 'm' },
     { id: 4, log: 'DDD', pass: 'PASS4', age: 16, student: '', gender: 'k' },
     { id: 5, log: 'EEE', pass: 'PASS5', age: 12, student: 'checked', gender: 'm' },
-] 
+]
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + "/static/main.html"))
