@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: #2F43A3;
+            height: 30px;
+            padding: 10px;
+            padding-left: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        a {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        header a {
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: #d5d5d5;
+            font-weight: bold;
+            font-size: 200px;
+            margin: 0;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        form .main_label {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        form input {
+            box-sizing: border-box;
+            width: 50%;
+            margin: 0;
+        }
+
+        span {
+            margin-bottom: 10px;
+            clear: both;
+            width: 100%;
+            float: left;
+        }
+
+        button {
+            padding: 20px 80px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/">main</a>
+        <a href="/register">register</a>
+        <a href="/login">login</a>
+        <a href="/admin">admin</a>
+    </header>
+
+    <main>
+        <p>login page</p>
+        <form action="/admin" method="POST">
+            <label class="main_label" for="log">login:</label>
+            <input type="text" name="log" id="log" required>
+
+            <span></span>
+
+            <label class="main_label" for="pass">password:</label>
+            <input type="password" name="pass" id="pass" required>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+</body>
+
+</html>

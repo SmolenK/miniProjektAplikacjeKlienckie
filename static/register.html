@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: #2F43A3;
+            height: 30px;
+            padding: 10px;
+            padding-left: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        a {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        header a {
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: #d5d5d5;
+            font-weight: bold;
+            font-size: 200px;
+            margin: 0;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        form .main_label {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        form input,
+        form select {
+            box-sizing: border-box;
+            width: 50%;
+            margin: 0;
+            color: #383a5f;
+        }
+
+        span {
+            margin-bottom: 10px;
+            clear: both;
+            width: 100%;
+            float: left;
+        }
+
+        #plec {
+            text-align: left;
+        }
+
+
+        .right_flow_align {
+            position: relative;
+            margin-left: 50%;
+            float: unset;
+        }
+
+        .right_flow_align input {
+            width: auto;
+        }
+
+        button {
+            padding: 20px 80px;
+            margin-top: 20px;
+        }
+
+        #kobieta,
+        #mezczyzna {
+            margin-right: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/">main</a>
+        <a href="/register">register</a>
+        <a href="/login">login</a>
+        <a href="/admin">admin</a>
+    </header>
+
+    <main>
+        <p>register page</p>
+        <form action="/register" method="POST">
+            <label class="main_label" for="log">login:</label>
+            <input type="text" name="log" id="log" required>
+
+            <span></span>
+
+            <label class="main_label" for="pass">password:</label>
+            <input type="password" name="pass" id="pass" required>
+
+            <span></span>
+
+            <label class="main_label" for="age">wiek:</label>
+            <select name="age" id="age">
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select>
+
+            <span></span>
+
+            <label class="main_label" for="student">uczeń?:</label>
+            <div class="right_flow_align">
+                <input type="checkbox" name="student" id="student" value="checked">
+            </div>
+
+            <span></span>
+
+            <label class="main_label">płeć:</label>
+            <div id="gender" class="right_flow_align">
+                <input type="radio" name="gender" id="kobieta" required value="k"><label for="kobieta">K</label>
+                <input type="radio" name="gender" id="mezczyzna" required value="m"><label for="mezczyzna">M</label>
+            </div>
+
+            <button type="submit">Submit</button>
+
+
+
+        </form>
+    </main>
+</body>
+
+</html>
